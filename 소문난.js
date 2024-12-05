@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // 로고 클릭 이벤트 수정
     document.querySelector('.logo a').addEventListener('click', function(e) {
         e.preventDefault();
-        window.location.href = '소문난 마케팅 홈페이지.html';
+        window.location.href = 'index.html';
     });
 
     // Swiper 슬라이더 초기화 수정
