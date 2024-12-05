@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우리동네 마부장</title>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
+    <!-- 커스텀 CSS -->
+    <link rel="stylesheet" href="소문난.css">
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <!-- 커스텀 JS -->
+    <script src="소문난.js"></script>
+</head>
+<body id="main">
+    <div id="wrap">
+        <!-- 헤더 영역 -->
+        <header id="header">
+            <div class="inner">
+                <div class="topArea">
+                    <h1 class="logo">
+                        <a href="소문난 마케팅 홈페이지.html">
+                            <img src="IMAGE/logo.jpg" alt="로고">
+                        </a>
+                    </h1>
+                </div>
+                <div class="navigation">
+                    <nav class="navigation__category">
+                        <ul>
+                            <li><a href="carrot-ad.html">당근마켓광고</a></li>
+                            <li><a href="products.html">광고상품</a></li>
+                            <li><a href="consultation.html">1:1상담</a></li>
+                            <li><a href="price_table.html">가격테이블</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- 메인 비주얼 섹션들 -->
+        <section class="mainVisual">
+            <div class="visual-item">
+                <!-- PC 이미지 -->
+                <picture class="RW">
+                    <img src="IMAGE/1.jpg" alt="메인배너1">
+                </picture>
+                <!-- 모바일 이미지 -->
+                <picture class="RMB">
+                    <img src="IMAGE/visual_01_m.jpg" alt="메인배너1">
+                </picture>
+            </div>
+
+            <div class="visual-item">
+                <picture class="RW">
+                    <img src="IMAGE/2.jpg" alt="메인배너2">
+                </picture>
+                <picture class="RMB">
+                    <img src="IMAGE/visual_02_m.jpg" alt="메인배너2">
+                </picture>
+            </div>
+
+            <div class="visual-item">
+                <picture class="RW">
+                    <img src="IMAGE/3.jpg" alt="메인배너3">
+                </picture>
+                <picture class="RMB">
+                    <img src="IMAGE/3_m.jpg" alt="메인배너3">
+                </picture>
+            </div>
+        </section>
+        <!-- 광고상품 섹션 -->
+        <section class="event">
+            <div class="product-list">
+                <ul>
+                    <li>
+                        <a href="#" class="imgLink">
+                            <img src="IMAGE/product_01.jpg" alt="우리동네입소문마케팅">
+                        </a>
+                        <a href="#">우리동네입소문마케팅</a>
+                    </li>
+                    <li>
+                        <a href="#" class="imgLink">
+                            <img src="IMAGE/product_02.jpg" alt="우리동네집중마케팅">
+                        </a>
+                        <a href="#">우리동네집중마케팅</a>
+                    </li>
+                    <li>
+                        <a href="#" class="imgLink">
+                            <img src="IMAGE/product_03.jpg" alt="당근마켓제품판매교육">
+                        </a>
+                        <a href="#">당근마켓제품판매교육</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- 상담신청 폼 -->
+        <section class="urgency">
+            <div class="title">
+                <h2>상담신청</h2>
+                <p>상담신청을 보내주시면 최대한 신속하게 연락드리겠습니다.</p>
+            </div>
+            <form id="consultForm" class="consult-form" action="send_email.php" method="POST">
+                <table>
+                    <tr>
+                        <th>질문유형</th>
+                        <td>
+                            <select name="question" required>
+                                <option value="1">입소문마케팅문의</option>
+                                <option value="2">집중마케팅문의</option>
+                                <option value="3">제품판매교육문의</option>
+                                <option value="4">마케팅견적문의</option>
+                                <option value="5">그외마케팅문의</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>업종/상호명 *</th>
+                        <td><input type="text" name="title" required></td>
+                    </tr>
+                    <tr>
+                        <th>연락처 *</th>
+                        <td><input type="tel" name="mobile" required></td>
+                    </tr>
+                    <tr>
+                        <th>이메일</th>
+                        <td><input type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <th>내용 *</th>
+                        <td><textarea name="content" required></textarea></td>
+                    </tr>
+                </table>
+                <div class="button-area">
+                    <button type="submit" class="submit-btn">상담신청</button>
+                </div>
+            </form>
+        </section>
+        <!-- 푸터를 비워둠 -->
+        <footer id="footer"></footer>
+    </div>
+    <!-- JavaScript 파일들 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="components.js"></script>  <!-- 컴포넌트 JS 추가 -->
+    <script src="소문난.js"></script>
+</body>
+</html>
